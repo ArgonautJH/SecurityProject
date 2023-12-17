@@ -3,47 +3,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>File Encryption Service</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encryption Services</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- 스타일 시트 추가 -->
 </head>
-<body class="bg-light">
-    <div class="container mt-5">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">File Encryption Service</h2>
-                
-                <form action="EncryptServlet" method="post" enctype="multipart/form-data">
-                    <div class="mb-3">
-                        <label for="file" class="form-label">Choose a file:</label>
-                        <input type="file" class="form-control" name="file" id="file" required>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="encryptionAlgorithm" class="form-label">Select encryption algorithm:</label>
-                        <select class="form-select" name="encryptionAlgorithm" id="encryptionAlgorithm" required>
-                            <option value="AES">AES</option>
-                            <option value="RSA">RSA</option>
-                        </select>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="hashAlgorithm" class="form-label">Select hash algorithm:</label>
-                        <select class="form-select" name="hashAlgorithm" id="hashAlgorithm" required>
-                            <option value="SHA-256">SHA-256</option>
-                            <option value="MD5">MD5</option>
-                        </select>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Encrypt File</button>
-                </form>
-            </div>
-        </div>
-    </div>
+<body>
 
-    <!-- Bootstrap JS (optional) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<div class="container mt-5">
+  <h1 class="text-center">Encryption Services</h1>
+  
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-block animated-button" onclick="changePage('hashEncrypt')">해시값 구하기</button>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-block animated-button" onclick="changePage('FileEncrypt')">파일 암호화</button>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-primary btn-block animated-button" onclick="changePage('base64')">Base64</button>
+    </div>
+  </div>
+
+  <div id="content" class="mt-5">
+    <!-- 페이지 내용은 여기에 동적으로 로딩 -->
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="homeEvent.js"></script>
+
 </body>
 </html>
