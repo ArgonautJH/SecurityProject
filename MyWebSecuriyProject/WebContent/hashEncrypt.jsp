@@ -23,7 +23,10 @@
                     <label for="type" class="form-label">해시 알고리즘 선택:</label>
                     <select class="form-select" id="type" name="type">
                         <option value="md5">MD5</option>
+                        <option value="sha1">SHA-1</option>
                         <option value="sha256">SHA-256</option>
+                        <option value="sha384">SHA-384</option>
+                        <option value="sha512">SHA-512</option>
                     </select>
                 </div>
 

@@ -45,7 +45,7 @@
 
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-md-6 offset-md-3">
+            <div class="col-md-8 mx-auto">
                 <div class="card shadow result-container">
                     <div class="card-body">
                         <h3 class="card-title text-center mb-4">해시 결과</h3>
