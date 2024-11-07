@@ -19,10 +19,10 @@
       <button class="btn btn-primary btn-block animated-button" onclick="changePage('hashEncrypt')">해시값 구하기</button>
     </div>
     <div class="col-md-4">
-      <button class="btn btn-primary btn-block animated-button" onclick="changePage('FileEncrypt')">파일 암호화</button>
+      <button class="btn btn-primary btn-block animated-button" onclick="changePage('FileEncrypt')">파일 암호화/복호화</button>
     </div>
     <div class="col-md-4">
-      <button class="btn btn-primary btn-block animated-button" onclick="changePage('base64')">Base64</button>
+      <button class="btn btn-primary btn-block animated-button" onclick="changePage('FolderFileEncrypt')">폴더 암호화/복호화</button>
     </div>
   </div>
 
